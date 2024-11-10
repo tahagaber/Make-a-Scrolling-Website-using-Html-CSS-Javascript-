@@ -22,10 +22,13 @@ window.onscroll = function(){
         nouvil.style.position =  'fixed';
         if(scrollY >=441.6000061035156){
             nouvil.style.display = 'none';
-
+        }else{
+            nouvil.style.display = 'block';
+        }
+        if(scrollY >=200){
+            document.querySelector('.main').style.background = 'linear-gradient(#376281,#10001f)';
         }
         else{
-            nouvil.style.display = 'block'
-        }
+            document.querySelector('.main').style.background = 'linear-gradient(#200016 , #10001f)';        }
     }
 }
